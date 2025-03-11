@@ -1,0 +1,60 @@
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 5px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 40px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: lightgray;
+}
+
+.numberContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.numbers {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.operatorsContainer {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.operators {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: lightgray;
+    border: 1px solid black;
+    cursor: pointer;
+}
